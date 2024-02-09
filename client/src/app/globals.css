@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.animatedButton {
+  display: block;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+.animatedButton > span {
+  position: absolute;
+  z-index: -1;
+  height: 0;
+  width: 0;
+  background-color: #221638;
+  display: block;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  transition: height 500ms ease-in-out, width 500ms ease-in-out;
+  pointer-events: none;
+}
+
+.animatedButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: #fff;
+}
+
+.animatedButton:hover > span {
+  height: 100%;
+  width: 100%;
+}
+
+.animation-left-right {
+  height: 25px;
+  width: 125px;
+  display: block;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.animation-left-right > i {
+  position: absolute;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease-in-out;
+}
+.animation-left-right > span {
+  white-space: nowrap;
+  position: absolute;
+  left: 25px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease-in-out;
+}
+.animation-left-right:hover > i {
+  left: 100px;
+}
+.animation-left-right:hover > span {
+  left: 5px;
+}
+
+.mainSection {
+  height: 140vh;
+  background-color: white;
+  background-image: url("/main-banner-bg4.jpg");
+  background-position: 50%;
+  /* background-position-x: 50%;
+  background-position-y: 50%; */
+  background-size: cover;
+}
+.footerSection {
+  background-color: white;
+  background-image: url("/footer-map.png");
+  background-position: 50%, 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.animated-underline {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.animated-underline > span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff5d22;
+  transition: width 0.3s ease;
+}
+
+.animated-underline > text {
+  position: relative;
+}
+
+.animated-underline:hover > span::after {
+  width: 0;
+}
