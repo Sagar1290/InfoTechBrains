@@ -21,7 +21,7 @@ const WhatWeServe = () => {
 
     return (
         <section className="-mt-48 md:pt-16 md:mt-0">
-            <h1 className="text-3xl font-bold px-10 py-4 text-center lg:text-4xl">How We Take Your Business From Good To Great</h1>
+            <h1 className="text-3xl font-bold px-10 py-4 text-center md:px-48 lg:text-4xl">How We Take Your Business From Good To Great</h1>
             <p className="text-[#6b6b84] p-4 text-sm text-center lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             <div className="px-10 flex flex-col lg:flex-row">
                 {

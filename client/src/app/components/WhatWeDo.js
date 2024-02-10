@@ -38,20 +38,22 @@ const WhatWeDo = () => {
                 {
                     ourWork.map((ele, index) => {
                         return (
-                            <div key={index} className="flex flex-col justify-center items-center p-4 md:w-1/3">
+                            <div key={index} className="flex flex-col justify-center md:items-start items-center p-4 md:w-1/3 md:mx-4">
                                 <div className="h-16 w-16 bg-red-100 hover:bg-[#ff5d22] rounded-lg">
                                     <img src={ele.image} alt="ourWorkImage" className="p-3" />
                                 </div>
                                 <h1 className="text-2xl font-semibold pt-4">{ele.heading}</h1>
-                                <p className="text-[#6b6b84] text-sm text-center py-4 px-8 md:text-lg md:text-left">{ele.content}</p>
-                                <div className=" underline underline-offset-4 hover:text-[#ff5d22] py-2 md:items-start">
-                                    <span className="md:text-lg md:text-left">{ele.service1}</span>
+                                <p className="text-[#6b6b84] text-sm text-center py-4 px-8 md:px-0 md:text-lg md:text-left">{ele.content}</p>
+
+                                <div className=" underline underline-offset-4 hover:text-[#ff5d22] py-2 ">
+                                    <span className="md:text-lg">{ele.service1}</span>
                                     <i className="fa-solid fa-arrow-right px-2"></i>
                                 </div>
                                 <div className="underline underline-offset-4 hover:text-[#ff5d22] py-2">
-                                    <span className="md:text-lg md:text-left">{ele.service2}</span>
+                                    <span className="md:text-lg">{ele.service2}</span>
                                     <i className="fa-solid fa-arrow-right px-2"></i>
                                 </div>
+
                             </div>
                         )
                     })

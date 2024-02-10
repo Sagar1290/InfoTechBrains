@@ -9,16 +9,16 @@ const Footer = () => {
                     <p className=" text-[#6b6b84] pr-4 sm:px-0">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
                     <div className="flex flex-row space-x-2 py-4">
                         <div className="bg-[#6b6b84] text-center p-2 h-8 w-8 text-white rounded-sm">
-                            <i class="fa-brands fa-facebook-f"></i>
+                            <i className="fa-brands fa-facebook-f"></i>
                         </div>
                         <div className="bg-[#6b6b84] text-center p-2 h-8 w-8 text-white rounded-sm">
-                            <i class="fa-brands fa-twitter"></i>
+                            <i className="fa-brands fa-twitter"></i>
                         </div>
                         <div className="bg-[#6b6b84] text-center p-2 h-8 w-8 text-white rounded-sm">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i className="fa-brands fa-instagram"></i>
                         </div>
                         <div className="bg-[#6b6b84] text-center p-2 h-8 w-8 text-white rounded-sm">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <i className="fa-brands fa-linkedin"></i>
                         </div>
                     </div>
                 </div>
@@ -46,20 +46,20 @@ const Footer = () => {
                     <h1 className="text-3xl py-3 px-3 md:text-xl md:font-bold">Address</h1>
                     <div className="flex flex-col text-[#6b6b84] px-3 py-3">
                         <div className="py-1">
-                            <i class="fa-solid fa-location-dot p-1 text-[#ff5d22]"></i>
+                            <i className="fa-solid fa-location-dot p-1 text-[#ff5d22]"></i>
                             <span className="p-1">175 5th Ave, New York, NY 10010, United States
                             </span>
                         </div>
                         <div className="py-1">
-                            <i class="fa-solid fa-phone-volume p-1 text-[#ff5d22]"></i>
+                            <i className="fa-solid fa-phone-volume p-1 text-[#ff5d22]"></i>
                             <span className="p-1">+1 (123) 456 7890</span>
                         </div>
                         <div className="py-1">
-                            <i class="fa-regular fa-envelope p-1 text-[#ff5d22]"></i>
+                            <i className="fa-regular fa-envelope p-1 text-[#ff5d22]"></i>
                             <span className="p-1">hello@tarn.com</span>
                         </div>
                         <div className="py-1">
-                            <i class="fa-solid fa-inbox p-1 text-[#ff5d22]"></i>
+                            <i className="fa-solid fa-inbox p-1 text-[#ff5d22]"></i>
                             <span className="p-1">+55 785 4578964</span>
                         </div>
                     </div>
